@@ -1,0 +1,43 @@
+<html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+
+<script src="./chat.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+<body class="container">
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-7">
+            <h1>CHAT APP</h1>
+        </div>
+        <div class="col-5"><input type="text" class="form-control" id="handle" placeholder="User" /></div>
+    </div>
+    <div id="mario-chat">
+        <div class="card">
+            <div class="card-body" id="cardBody" style="overflow: auto; height: 350px;">
+                <div class="row" id="chat-window">
+                    <div class="col-12" id="output"></div>
+                </div>
+                <div class="col-4" id="feedback"></div>
+                <br>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="message" placeholder="type here...">
+            <div class="input-group-append">
+                <button class="btn btn-outline-success" type="button" id="send">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
